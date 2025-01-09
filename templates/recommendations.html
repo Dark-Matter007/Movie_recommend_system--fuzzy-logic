@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Adding a favicon -->
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Adding a glowing title -->
+        <h1 class="title">🎬 Movie Recommendations 🎥</h1>
+        
+        <!-- Subheading for context -->
+        <p class="subheading">Handpicked just for you!</p>
+        
+        <!-- Movie recommendations list -->
+        <ul>
+            {% for movie in suggestedMovies %}
+            <li>
+                <div class="movie-item">
+                    <span class="movie-title">{{ movie }}</span>
+                   
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        
+        <!-- Adding a glowing "Go Back" button -->
+        <a href="{{ url_for('home') }}" class="back-button">🔙 Go Back</a>
+    </div>
+</body>
+</html>

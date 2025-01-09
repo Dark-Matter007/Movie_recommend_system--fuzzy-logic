@@ -1,0 +1,93 @@
+/* Importing a stylish Ninja-like Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Roboto', Fantasy; /* New font */
+    background-color: #101010; /* Dark background */
+    background-image: url('https://hdqwalls.com/wallpapers/star-wars-poster-4k-af.jpg'); /* Custom background image */
+    background-size: cover; /* Ensure the image covers the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+
+}
+
+/* Main container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #222222;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px rgb(255, 0, 0), 0 0 40px rgb(255, 0, 0), 0 0 60px rgb(255, 0, 0);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1) rotateY(10deg); /* Hover scale and rotation */
+}
+
+/* Message styling */
+.message {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List items styling */
+ul li {
+    background: #000;
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease;
+}
+
+ul li:hover {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.7);
+    text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.8);
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #444, #666);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.back-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+

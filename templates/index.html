@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Welcome to Movie Recommendation</h1>
+    <form action="{{ url_for('recommend') }}" method="POST">
+        <h2>Enter your movie ratings (0-5 stars)</h2>
+        
+        <div>
+            <label for="movies">Movie Title</label><br>
+            <input type="text" name="movies" placeholder="Enter Movie Title" required>
+        </div>
+        
+        <div>
+            <label for="movie_ratings">Rating (0-5)</label><br>
+            <input type="text" name="movie_ratings" placeholder="Enter Rating" required>
+        </div>
+
+        <div>
+            <label>Use Random Ratings?</label>
+            <input type="radio" name="random" value="y"> Yes
+            <input type="radio" name="random" value="n" checked> No
+        </div>
+        
+        <div>
+            <input type="submit" value="Get Recommendations">
+        </div>
+    </form>
+</body>
+</html>
